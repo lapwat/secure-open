@@ -3,4 +3,4 @@ FROM alpine
 RUN apk add --update \
 	feh
 
-CMD ["feh", "/image"]
+CMD ["feh", "/renderme.png"]
