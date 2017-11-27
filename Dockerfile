@@ -6,15 +6,18 @@ RUN apk add --no-cache \
 	mpg123 \
 	xpdf
 
-# Video
-#	mesa ? \
-#	mesa-dev ? \
-#	mpv or mplayer or vlc \
-# File Manager
-#	midnight commander or pcmanfm -> font not rendered :(
-
 RUN mkdir /app/
 WORKDIR /app/
 ADD open_all.py .
 
 CMD ["python3", "./open_all.py"]
+
+# Video
+#	mesa ?
+#	mesa-dev ?
+#	mpv
+#	or mplayer
+#	or vlc
+# File Manager
+#	midnight commander
+# 	or pcmanfm -> font not rendered :(
