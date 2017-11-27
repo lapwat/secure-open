@@ -1,8 +1,20 @@
 FROM alpine
 
-RUN apk add --update \
-	feh
+RUN apk add --no-cache \
+	python3 \
+	feh \
+	mpg123 \
+	xpdf
 
-RUN mkdir -p /app/data
-ADD open.sh /app
-CMD ["/bin/sh", "/app/open.sh"]
+# Video
+#	mesa ? \
+#	mesa-dev ? \
+#	mpv or mplayer or vlc \
+# File Manager
+#	midnight commander or pcmanfm -> font not rendered :(
+
+RUN mkdir /app/
+WORKDIR /app/
+ADD open_all.py .
+
+CMD ["python3", "./open_all.py"]
