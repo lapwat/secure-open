@@ -1,3 +1,5 @@
+A virtual docker environment to securely open images, videos, sounds and more.
+
 ## SETUP
 
 ```

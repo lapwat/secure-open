@@ -3,4 +3,6 @@ FROM alpine
 RUN apk add --update \
 	feh
 
-CMD ["feh", "/renderme.png"]
+RUN mkdir data
+
+CMD ["feh", "/data/renderme.png"]
