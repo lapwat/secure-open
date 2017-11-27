@@ -4,4 +4,4 @@ RUN apk add --update \
 	feh
 
 RUN mkdir data
-CMD ["feh", "/data/renderme.png"]
+CMD ["feh", "/data/*"]

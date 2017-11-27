@@ -8,15 +8,25 @@ cd secure-open-docker
 docker build . -t secure-open
 ```
 
+Put images to render into *data* folder.
+
 ## RUN
 
 ```
-docker run  -v renderme.png:/renderme.png:rw \
-	-v /tmp/.X11-unix:/tmp/.X11-unix \
-	-e uid=$(id -u) \
-	-e gid=$(id -g) \
-	-e DISPLAY=unix$DISPLAY \
-	secure-open
+docker run -v $(pwd)/data:/data \   
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -e DISPLAY=unix$DISPLAY \
+        secure-open
+```
+
+If it does not work, try:
+```
+docker run -v $(pwd)/data:/data \
+        -v /tmp/.X11-unix:/tmp/.X11-unix \
+        -e uid=$(id -u) \
+        -e gid=$(id -g) \
+        -e DISPLAY=unix$DISPLAY \
+        secure-open
 ```
 
 ## FAQ
