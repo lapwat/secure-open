@@ -2,12 +2,12 @@ A virtual docker environment to securely open images, videos, sounds and more.
 
 ## Todo
 
-- [ ] Text
+- [x] Text
 - [x] Image
 - [x] PDF
-- [ ] Video
+- [x] Video
 - [x] Sound
-- [ ] URL
+- [x] URL
 - [ ] File manager
 
 ## Setup
@@ -19,6 +19,7 @@ cd secure-open-docker
 
 Make sure you have docker-compose installed.
 Put files to render into **data** folder.
+Files ending in .url contains URLs
 
 ## Run
 

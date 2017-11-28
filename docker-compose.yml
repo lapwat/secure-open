@@ -6,9 +6,9 @@ services:
         ipc: host
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
-            - ./data:/home/user/data:ro
+            - ./data:/app/data:ro
         devices:
             - /dev/snd
         environment:
-            - DISPLAY=${DISPLAY}
+            - DISPLAY=unix${DISPLAY}
 
