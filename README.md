@@ -15,27 +15,17 @@ A virtual docker environment to securely open images, videos, sounds and more.
 ```
 git clone https://github.com/lapwat/secure-open-docker
 cd secure-open-docker
-docker build . -t secure-open
 ```
 
+Make sure you have docker-compose installed.
 Put files to render into **data** folder.
-Alternatively, you can directly mount the
 
 ## Run
-
-Make sure you allowed the docker user to communicate with your X session:
-```
-xhost +local:docker
-```
 
 Run it!
 
 ```
-docker run -v $(pwd)/data:/app/data \
-        -v /tmp/.X11-unix:/tmp/.X11-unix \
-        -e DISPLAY=$DISPLAY \
-        --device /dev/snd \
-        secure-open
+./secure-open.sh
 ```
 
 ## Notes

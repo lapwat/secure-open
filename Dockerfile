@@ -1,14 +1,19 @@
-FROM alpine
+FROM alpine:3.6
 
 RUN apk add --no-cache \
 	bash \
 	feh \
-	mpg123 \
 	xpdf \
-	mplayer
+	mplayer \
+    mesa-dri-swrast \
+    tini
 
-RUN mkdir /app/
-WORKDIR /app/
+RUN adduser -S  user
+USER user
+
+WORKDIR /home/user
 ADD open_all.sh .
 
-CMD ["./open_all.sh"]
+ENTRYPOINT ["/sbin/tini", "--"]
+
+CMD ["/home/user/open_all.sh"]

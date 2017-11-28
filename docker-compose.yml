@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    secure-open:
+        build: .
+        ipc: host
+        volumes:
+            - /tmp/.X11-unix:/tmp/.X11-unix
+            - ./data:/home/user/data:ro
+        devices:
+            - /dev/snd
+        environment:
+            - DISPLAY=${DISPLAY}
+

@@ -17,4 +17,8 @@ for file in $files; do
 	if [[ $file =~ \.(wav|flac|mp3)$ ]]; then
 		mpg123 "$file"
 	fi
+
+    if [[ $file =~ \.(mp4|webm|mkv)$ ]]; then
+        mplayer "$file"
+    fi
 done
