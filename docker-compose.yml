@@ -6,7 +6,7 @@ services:
         ipc: host
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix
-            - ./data:/app/data:ro
+            - ./data:/app/data
         devices:
             - /dev/snd
         environment:
