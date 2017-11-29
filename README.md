@@ -3,7 +3,7 @@ A virtual docker environment to securely open images, videos, sounds and more.
 ## What is working ?
 
 File type | Extensions | App
---- | --- | --- | ---
+--- | --- | ---
 Image | tif, bmp, png, svg, jpg, jpeg | feh
 Video | mkv, mp4, webm, avi, mov | mplayer
 Sound | mp3 | mpg123
