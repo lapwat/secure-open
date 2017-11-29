@@ -4,6 +4,7 @@ RUN apk add --no-cache \
 	bash \
 	feh \
 	xpdf \
+	mpg123 \
 	mplayer \
     mesa-dri-swrast \
     tini
