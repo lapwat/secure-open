@@ -11,11 +11,11 @@ PDF | pdf | xpdf
 URL | url | curl
 Text | txt | leafpad
 
-Unknown extensions will be opened as text files.
-.url files should contain a list of URLs to be downloaded then rendered
-
-
 Do not hesitate to ask support for more file types or extensions.
+
+Unknown extensions will be opened as text files.
+
+.url files should contain a list of URLs to be downloaded then rendered
 
 ## Setup
 
@@ -24,17 +24,12 @@ git clone https://github.com/lapwat/secure-open-docker
 cd secure-open-docker
 ```
 
-Make sure you have `xhost` and `docker-compose` installed.
 Put files you want to render into **data** folder.
 
 ## Run
 
-Run it!
+Make sure you have `xhost` and `docker-compose` installed.
 
 ```
 ./secure-open.sh
 ```
-
-## Notes
-
-Highly inspired from [acroread](https://github.com/chrisdaish/docker-acroread)
