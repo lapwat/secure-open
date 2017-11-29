@@ -2,16 +2,16 @@ A virtual docker environment to securely open images, videos, sounds and more.
 
 ## What is working ?
 
-File type | Extensions | Renderer
+File type | Renderer | Supported extensions
 --- | --- | ---
-Image | tif, bmp, png, svg, jpg, jpeg | feh
-Video | mkv, mp4, webm, avi, mov | mplayer
-Sound | mp3 | mpg123
-PDF | pdf | xpdf
-URL | url | curl
-Text | txt | leafpad
+Image | feh | tif, bmp, png, svg, jpg, jpeg
+Video | mplayer | mkv, mp4, webm, avi, mov
+Sound | mpg123 | mp3
+PDF | xpdf | pdf
+URL | curl | url
+Text | leafpad | txt
 
-Do not hesitate to ask support for more file types or extensions.
+Do not hesitate to ask for support for more file types or extensions.
 
 Unknown extensions will be opened as text files.
 
