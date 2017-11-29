@@ -7,14 +7,17 @@ RUN apk add --no-cache \
 	mpg123 \
 	mplayer \
     mesa-dri-swrast \
-    tini
+    tini \
+    dillo \
+    leafpad \
+    && rm -rf /var/cache/apk/*
 
-RUN adduser -S  user
+RUN adduser -S -G audio user
 USER user
 
-WORKDIR /home/user
-ADD open_all.sh .
+WORKDIR /app
+COPY open_all.sh .
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
-CMD ["/home/user/open_all.sh"]
+CMD ["/app/open_all.sh"]
