@@ -1,0 +1,16 @@
+[Added Associations]
+image/tiff=feh.desktop
+image/bmp=feh.desktop
+image/png=feh.desktop
+image/svg+xml=feh.desktop
+image/jpeg=feh.desktop
+image/gif=feh.desktop
+image/x-icon=feh.desktop
+audio/mpeg=mpg123.desktop;
+video/x-matroska=mplayer.desktop;
+video/mp4=mplayer.desktop;
+video/webm=mplayer.desktop;
+video/x-msvideo=mplayer.desktop;
+application/pdf=xpdf.desktop;
+text/plain=leafpad.desktop;
+application/x-mswinurl=openurl.desktop;

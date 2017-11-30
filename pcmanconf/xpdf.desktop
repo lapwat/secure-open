@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=xpdf
+Exec=xpdf %f
+Categories=Other;
+NoDisplay=true
+MimeType=application/pdf
+Terminal=false

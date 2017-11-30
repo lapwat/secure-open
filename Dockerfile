@@ -7,16 +7,17 @@ RUN apk add --no-cache \
 	xpdf \
 	mpg123 \
 	mplayer \
-    mesa-dri-swrast \
-    tini \
-    leafpad
+    leafpad \
+    pcmanfm
 
 #RUN adduser -S -G audio user
 #USER user
 
-WORKDIR /app
-COPY open_all.sh .
+ENV HOME /root/
+WORKDIR $HOME
+COPY pcmanconf/mimeapps.list .config/
+COPY pcmanconf/*.desktop .local/share/applications/
 
-#ENTRYPOINT ["/sbin/tini", "--"]
+COPY openurl.sh /app/
 
-CMD ["/app/open_all.sh"]
+CMD ["pcmanfm", "/app/data/"]

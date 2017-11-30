@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=mpg123
+Exec=mpg123 %f
+Categories=Other;
+NoDisplay=true
+MimeType=audio/mpeg
+Terminal=false

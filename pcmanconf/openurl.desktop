@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=openurl
+Exec=/app/openurl.sh %f
+Categories=Other;
+NoDisplay=true
+MimeType=application/x-mswinurl
+Terminal=false

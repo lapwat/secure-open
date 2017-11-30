@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=mplayer
+Exec=mplayer %f
+Categories=Other;
+NoDisplay=true
+MimeType=video/mp4
+Terminal=false
