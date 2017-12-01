@@ -6,12 +6,10 @@ RUN apk add --no-cache \
 	feh \
 	xpdf \
 	mpg123 \
-	mplayer \
-    leafpad \
-    pcmanfm
-
-#RUN adduser -S -G audio user
-#USER user
+	leafpad \
+	mesa-dri-swrast \
+	mpv \
+	pcmanfm
 
 ENV HOME /root/
 WORKDIR $HOME

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=mplayer
-Exec=mplayer %f
+Name=mpv
+Exec=mpv %f
 Categories=Other;
 NoDisplay=true
-MimeType=video/mp4
+MimeType=video/x-matroska;video/mp4;video/webm;video/x-msvideo
 Terminal=false

@@ -4,5 +4,5 @@ Name=feh
 Exec=feh %f
 Categories=Other;
 NoDisplay=true
-MimeType=image/png
+MimeType=image/tiff;image/bmp;image/png;image/jpeg;image/gif;image/x-icon
 Terminal=false

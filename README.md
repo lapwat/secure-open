@@ -1,5 +1,6 @@
 A virtual docker environment to securely open images, videos, sounds and more.
 
+![Screenshot](screenshot.png)
 
 ## What is working ?
 
