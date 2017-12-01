@@ -1,7 +1,7 @@
 renderer,filetype,extensions
 leafpad,plain,text
 feh,image,tiff,bmp,png,jpeg,gif,x-icon
-mplayer,video,x-matroska,mp4,webm,x-msvideo
+mpv,video,x-matroska,mp4,webm,x-msvideo
 xpdf,application,pdf
 mpg123,audio,mpeg
 openurl,application,x-mswinurl

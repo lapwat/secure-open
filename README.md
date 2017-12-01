@@ -7,7 +7,7 @@ A virtual docker environment to securely open images, videos, sounds and more.
 File type | Renderer | Associated extensions
 --- | --- | ---
 Image | feh | tif, tiff, bmp, png, jpg, jpeg, gif, ico
-Video | mplayer | mkv, mp4, webm, avi
+Video | mpv | mkv, mp4, webm, avi
 Sound | mpg123 | mp3
 PDF | xpdf | pdf
 URL | curl | url
