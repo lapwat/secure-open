@@ -4,9 +4,10 @@ services:
         build: .
         ipc: host
         volumes:
-            - /tmp/.X11-unix:/tmp/.X11-unix
-            - ./data:/app/data
+        - /tmp/.X11-unix:/tmp/.X11-unix
+        - ./data:/app/data
         devices:
-            - /dev/snd
+        - /dev/snd
+        - /dev/dri
         environment:
-            - DISPLAY=unix${DISPLAY}
+        - DISPLAY=unix${DISPLAY}
