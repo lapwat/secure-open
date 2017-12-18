@@ -1,5 +1,4 @@
 version: "3"
-
 services:
     secure-open:
         build: .
@@ -11,4 +10,3 @@ services:
             - /dev/snd
         environment:
             - DISPLAY=unix${DISPLAY}
-

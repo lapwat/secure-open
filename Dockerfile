@@ -7,11 +7,16 @@ RUN apk add --no-cache \
 	xpdf \
 	mpg123 \
 	leafpad \
+	mesa \
+	mesa-dev \
 	mesa-dri-swrast \
 	mpv \
 	pcmanfm
 
-ENV HOME /root/
+#RUN adduser -S -G audio user
+#USER user
+
+ENV HOME /home/user
 WORKDIR $HOME
 COPY pcmanconf/mimeapps.list .config/
 COPY pcmanconf/*.desktop .local/share/applications/
