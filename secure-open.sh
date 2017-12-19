@@ -15,4 +15,4 @@ DIR="$(cd "$(dirname "$1")"; pwd)"
 VOLUME_VALUE=$DIR/$NAME:/app/data/$NAME
 
 xhost +local:docker
-docker run -v $VOLUME_VALUE -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix$DISPLAY lapwat/secure-open
+docker run -v $VOLUME_VALUE -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix$DISPLAY secure-open

@@ -1,4 +1,4 @@
-A virtual docker environment to securely open images, videos, sounds and more.
+A Docker environment to securely open images, videos, sounds and more.
 
 ![Screenshot](screenshot.png)
 
@@ -17,13 +17,23 @@ Do not hesitate to ask for support for more file types or extensions.
 
 Unknown extensions will be opened as text files.
 
-.url files should contain a list of URLs. If double clicked, all URLs will be downloaded into `data/downloads` folder.
+.url files should contain a list of URLs. If double clicked, all URLs will be downloaded into `/app/data/` folder.
 
 ## Setup
 
+### Download image from Docker Hub
+
 ```
-git clone https://github.com/lapwat/secure-open-docker
-cd secure-open-docker
+git clone https://github.com/lapwat/secure-open
+cd secure-open
+```
+
+### Build from source (optional)
+
+You can build the docker image from this repository. If you don't, the image will pulled from docker-hub.
+
+```
+docker build . -t lapwat/secure-open
 ```
 
 ## Run
