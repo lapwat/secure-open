@@ -1,18 +1,34 @@
 #!/bin/bash
 
-if [[ $# -ne 1 ]]; then
-  echo "You must specify a unique argument."
+if [[ $# -eq 0 ]]; then
+  echo "You must specify a file or directory to open."
   exit 0
 fi
 
-if [[ ! -e $1 ]]; then
-  echo "$1 does not exist."
+for LASTARG; do true; done
+if [[ ! -e "$LASTARG" ]]; then
+  echo "$LASTARG does not exist."
   exit 0
 fi
 
-NAME=$(basename "$1")
-DIR="$(cd "$(dirname "$1")"; pwd)"
-VOLUME_VALUE=$DIR/$NAME:/app/data/$NAME
+RW=false
+while getopts "w" OPT
+do
+  case "$OPT" in
+    w)
+      RW=true
+      ;;
+  esac
+done
+
+NAME=$(basename "$LASTARG")
+DIR="$(cd "$(dirname "$LASTARG")"; pwd)"
+if [[ "$RW" = true ]]; then
+  READOPTION="rw"
+else
+  READOPTION="ro"
+fi
+VOLUME_VALUE="$DIR"/"$NAME":/app/data/"$NAME":"$READOPTION"
 
 xhost +local:docker
-docker run -v $VOLUME_VALUE -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix$DISPLAY secure-open
+docker run -v "$VOLUME_VALUE" -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix"$DISPLAY" lapwat/secure-open

@@ -41,7 +41,7 @@ docker build . -t lapwat/secure-open
 Make sure you have `xhost` and `docker` installed.
 
 ```
-./secure-open.sh path
+./secure-open.sh [-w] path
 ```
 
-The path can be either a file or a directory. It will be mounted as a readable and writable volume.
+The path can be either a file or a directory. It will be mounted as a readable-only volume. Specify `-w` option to mount it as a readable writable volume.
