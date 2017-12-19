@@ -1,0 +1,17 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: lapwat/secure-open
+    tags: ${DRONE_COMMIT_SHA:0:8}
+    username: lapwat
+    secrets: [ docker_password ]
+  deploy:
+    image: quay.io/honestbee/drone-kubernetes
+    kubernetes_server: ${KUBERNETES_SERVER}
+    kubernetes_cert: ${KUBERNETES_CERT}
+    kubernetes_token: ${KUBERNETES_TOKEN}
+    deployment: secure-open-deployment
+    repo: lapwat/secure-open
+    container: secure-open-container
+    tag:
+    - ${DRONE_COMMIT_SHA:0:8}

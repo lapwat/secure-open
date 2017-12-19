@@ -26,12 +26,12 @@ git clone https://github.com/lapwat/secure-open-docker
 cd secure-open-docker
 ```
 
-Put files you want to render into `data` folder.
-
 ## Run
 
-Make sure you have `xhost` and `docker-compose` installed.
+Make sure you have `xhost` installed.
 
 ```
-./secure-open.sh
+./secure-open.sh path
 ```
+
+The path could be either a file or a directory. It will be mounted as a readable and writable volume.

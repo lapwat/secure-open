@@ -1,13 +1,13 @@
 version: "3"
 services:
-    secure-open:
-        build: .
-        ipc: host
-        volumes:
-        - /tmp/.X11-unix:/tmp/.X11-unix
-        - ./data:/app/data
-        devices:
-        - /dev/snd
-        - /dev/dri
-        environment:
-        - DISPLAY=unix${DISPLAY}
+  secure-open:
+    build: .
+    ipc: host
+    volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - ./data:/app/data
+    devices:
+    - /dev/snd
+    - /dev/dri
+    environment:
+    - DISPLAY=unix${DISPLAY}
