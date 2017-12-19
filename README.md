@@ -13,15 +13,15 @@ PDF | xpdf | pdf
 URL | curl | url
 Text | leafpad | txt
 
-Do not hesitate to ask for support for more file types or extensions.
-
 Unknown extensions will be opened as text files.
+
+Do not hesitate to ask for support for more file types or extensions.
 
 .url files should contain a list of URLs. If double clicked, all URLs will be downloaded into `/app/data/` folder.
 
 ## Setup
 
-### Download image from Docker Hub
+### Clone the repository
 
 ```
 git clone https://github.com/lapwat/secure-open
@@ -30,7 +30,7 @@ cd secure-open
 
 ### Build from source (optional)
 
-You can build the docker image from this repository. If you don't, the image will pulled from docker-hub.
+You can build the Docker image from this repository. If you don't, the image will pulled from Docker Hub.
 
 ```
 docker build . -t lapwat/secure-open

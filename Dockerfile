@@ -17,10 +17,10 @@ RUN apk add --no-cache \
 
 ENV HOME /root/
 WORKDIR $HOME
-COPY pcmanconf/mimeapps.list .config/
-COPY pcmanconf/*.desktop .local/share/applications/
+COPY .config/pcmanconf/mimeapps.list .config/
+COPY .config/pcmanconf/*.desktop .local/share/applications/
 
-COPY openurl.sh /app/
+COPY .config/openurl.sh /app/
 
 CMD ["pcmanfm", "/app/data/"]
 
