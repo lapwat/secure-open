@@ -28,7 +28,7 @@ cd secure-open-docker
 
 ## Run
 
-Make sure you have `xhost` installed.
+Make sure you have `xhost` and `docker` installed.
 
 ```
 ./secure-open.sh path
