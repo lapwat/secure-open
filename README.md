@@ -34,4 +34,4 @@ Make sure you have `xhost` installed.
 ./secure-open.sh path
 ```
 
-The path could be either a file or a directory. It will be mounted as a readable and writable volume.
+The path can be either a file or a directory. It will be mounted as a readable and writable volume.
