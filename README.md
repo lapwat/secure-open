@@ -1,4 +1,4 @@
-A Docker environment to securely open images, videos, sounds and more.
+The purpose of this tool is to open files from unknown sources without putting in danger the integrity of your system. The tool supports text, video, image, pdf formats.
 
 ![Screenshot](screenshot.png)
 
@@ -43,7 +43,7 @@ docker pull lapwat/secure-open
 Make sure you have `xhost` and `docker` installed.
 
 ```
-./secure-open.sh [-w] path
+./secure-open.sh [-w] path/to/file_or_directory
 ```
 
-The path can be either a file or a directory. It will be mounted as a readable-only volume. Specify `-w` option to mount it as a readable writable volume.
+The path will be mounted as a readable-only volume. Specify `-w` option to mount it as a readable writable volume.
