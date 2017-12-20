@@ -31,4 +31,4 @@ fi
 VOLUME_VALUE="$DIR"/"$NAME":/app/data/"$NAME":"$READOPTION"
 
 xhost +local:docker
-docker run -v "$VOLUME_VALUE" -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix"$DISPLAY" lapwat/secure-open
+docker run -v "$VOLUME_VALUE" -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/snd --device /dev/dri -e DISPLAY=unix"$DISPLAY" --ipc=host lapwat/secure-open

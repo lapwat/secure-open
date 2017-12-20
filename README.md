@@ -21,19 +21,21 @@ Do not hesitate to ask for support for more file types or extensions.
 
 ## Setup
 
-### Clone the repository
+**You have two choices for the setup: you can build from source or directely pull the latest Docker image from Docker Hub.**
+
+### Build from source
 
 ```
 git clone https://github.com/lapwat/secure-open
 cd secure-open
-```
-
-### Build from source (optional)
-
-You can build the Docker image from this repository. If you don't, the image will pulled from Docker Hub.
-
-```
 docker build . -t lapwat/secure-open
+```
+
+### Pull Docker image from Docker Hub
+
+```
+curl -O https://raw.githubusercontent.com/lapwat/secure-open/master/secure-open.sh
+docker pull lapwat/secure-open
 ```
 
 ## Run

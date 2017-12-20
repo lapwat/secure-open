@@ -1,15 +1,15 @@
 FROM alpine:3.6
 
 RUN apk add --no-cache \
-	mesa-dri-swrast \
-	bash \
-	curl \
-	feh \
-	xpdf \
-	mpg123 \
-	leafpad \
-	mpv \
-	pcmanfm
+  mesa-dri-swrast \
+  bash \
+  curl \
+  feh \
+  xpdf \
+  mpg123 \
+  leafpad \
+  mpv \
+  pcmanfm
 
 #RUN adduser -S -G audio user
 #USER user
@@ -23,8 +23,8 @@ COPY .config/openurl.sh /app/
 
 CMD ["pcmanfm", "/app/data/"]
 
-#	libva \
-#	mesa-gl \
-#	mesa \
-#	mesa-dev \
-#	mesa-dri-intel \
+# libva \
+# mesa-gl \
+# mesa \
+# mesa-dev \
+# mesa-dri-intel \
