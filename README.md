@@ -21,7 +21,7 @@ Do not hesitate to ask for support for more file types or extensions.
 
 ## Setup
 
-**You have two choices for the setup: you can build from source or directely pull the latest Docker image from Docker Hub.**
+You have two choices to get the Docker image: you can **build it from source** or **pull it from Docker Hub**.
 
 ### Build from source
 
@@ -31,7 +31,7 @@ cd secure-open
 docker build . -t lapwat/secure-open
 ```
 
-### Pull Docker image from Docker Hub
+### Pull from Docker Hub
 
 ```
 curl -O https://raw.githubusercontent.com/lapwat/secure-open/master/secure-open.sh

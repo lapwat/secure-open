@@ -1,0 +1,14 @@
+version: "3"
+services:
+  secure-open:
+    build: .
+    image: lapwat/secure-open
+    ipc: host
+    volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    - ${VOLUME_VALUE}
+    devices:
+    - /dev/snd
+    - /dev/dri
+    environment:
+    - DISPLAY=unix${DISPLAY}
