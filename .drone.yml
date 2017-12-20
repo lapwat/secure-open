@@ -3,7 +3,7 @@ pipeline:
     image: plugins/docker
     repo: lapwat/secure-open
     tags:
-    - latest
     - ${DRONE_COMMIT_SHA:0:8}
+    - latest
     username: lapwat
     secrets: [ docker_password ]
