@@ -31,7 +31,7 @@ cd secure-open
 docker build . -t lapwat/secure-open
 ```
 
-### Pull from Docker Hub
+### or Pull from Docker Hub
 
 ```
 curl -O https://raw.githubusercontent.com/lapwat/secure-open/master/secure-open.sh
