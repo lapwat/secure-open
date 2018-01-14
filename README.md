@@ -40,7 +40,7 @@ docker pull lapwat/secure-open
 
 ## Run
 
-Make sure you have `xhost` and `docker` installed.
+Make sure you have `xhost`, `docker` and `docker-compose` installed.
 
 ```
 ./secure-open.sh [-w] path/to/file_or_directory
