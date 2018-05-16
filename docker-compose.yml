@@ -6,7 +6,7 @@ services:
     ipc: host
     volumes:
     - /tmp/.X11-unix:/tmp/.X11-unix
-    - ${VOLUME_VALUE}
+    - ${ABSOLUTE_PATH}:/app/data/${NAME}:${READOPTION}
     devices:
     - /dev/snd
     - /dev/dri

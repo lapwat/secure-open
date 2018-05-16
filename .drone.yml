@@ -1,9 +1,0 @@
-pipeline:
-  docker:
-    image: plugins/docker
-    repo: lapwat/secure-open
-    tags:
-    - ${DRONE_COMMIT_SHA:0:8}
-    - latest
-    username: lapwat
-    secrets: [ docker_password ]
