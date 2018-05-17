@@ -1,8 +1,10 @@
+# Motivation
+
 The purpose of this tool is to open files from unknown sources without putting in danger the integrity of your system. Files are rendered through X11 mirroring from the Docker container to your machine. Opened files are never opened in your environment and never have access to it. I chose Docker containers because they are fast, light, easy to build and have a great community that I trust about security.
 
 The tool supports text, video, image, pdf formats.
 
-## What is working ?
+# What is working ?
 
 File type | Renderer | Associated extensions
 --- | --- | ---
@@ -21,11 +23,11 @@ Do not hesitate to ask for support for more file types or extensions.
 
 ![Screenshot](screenshot.png)
 
-## Setup
+# Setup
 
 You have two choices to get the Docker image: you can **build it from source** or **pull it from Docker Hub**.
 
-### Build from source
+## Build from source
 
 ```
 git clone https://github.com/lapwat/secure-open
@@ -33,7 +35,7 @@ cd secure-open
 docker build . -t lapwat/secure-open
 ```
 
-### or Pull from Docker Hub
+## or Pull from Docker Hub
 
 ```
 curl -O https://raw.githubusercontent.com/lapwat/secure-open/master/secure-open.sh
