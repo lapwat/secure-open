@@ -1,6 +1,6 @@
-The purpose of this tool is to open files from unknown sources without putting in danger the integrity of your system. The tool supports text, video, image, pdf formats.
+The purpose of this tool is to open files from unknown sources without putting in danger the integrity of your system. Files are rendered through X11 mirroring from the Docker container to your machine. Opened files are never opened in your environment and never have access to it. I chose Docker containers because they are fast, light, easy to build and have a great community that I trust about security.
 
-![Screenshot](screenshot.png)
+The tool supports text, video, image, pdf formats.
 
 ## What is working ?
 
@@ -18,6 +18,8 @@ Unknown extensions will be opened as text files.
 Do not hesitate to ask for support for more file types or extensions.
 
 .url files should contain a list of URLs. If double clicked, all URLs will be downloaded into `/app/data/` folder.
+
+![Screenshot](screenshot.png)
 
 ## Setup
 
