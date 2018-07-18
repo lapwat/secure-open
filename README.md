@@ -21,6 +21,12 @@ $ docker run  --volume /path/to/file_or_directory:/app/data/secure:ro \
               lapwat/secure-open
 ```
 
+Alternatively, you can use `docker-compose`:
+
+```
+$ OPEN_PATH=/path/to/file_or_directory docker-compose up -d
+```
+
 Remove `ro` option if you want to be able to modify files from the container.
 
 # What is working ?
