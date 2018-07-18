@@ -2,7 +2,7 @@
 
 The purpose of this tool is to open files from unknown sources without putting in danger the integrity of your system. Files are rendered through X11 mirroring from the Docker container to the host machine. Opened files are never opened in your environment and only have access to the mounted volumes / devices. The container disconnected from the internet. I chose Docker containers because they are fast, light, easy to build and have a great community that I trust about security.
 
-The tool supports text, video, image, pdf formats.
+The tool supports image, video, sound, pdf and text formats.
 
 ![Screenshot](screenshot.png)
 
