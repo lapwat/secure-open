@@ -11,7 +11,7 @@ The tool supports image, video, sound, pdf and text formats.
 Make sure you have `xhost` and `docker` installed.
 
 ```
-$ docker run  --volume /path/to/directory:/app/data/secure:ro \
+$ docker run  --volume /absolute/path/to/directory:/app/data/secure:ro \
               --volume /tmp/.X11-unix:/tmp/.X11-unix \
               --network none \
               --ipc host \
@@ -24,7 +24,7 @@ $ docker run  --volume /path/to/directory:/app/data/secure:ro \
 Alternatively, you can use `docker-compose`:
 
 ```
-$ PATH_TO_DIRECTORY=/path/to/directory docker-compose up -d
+$ PATH_TO_DIRECTORY=/absolute/path/to/directory docker-compose up -d
 ```
 
 Remove `ro` option if you want to be able to modify files from the container.
