@@ -11,7 +11,7 @@ The tool supports image, video, sound, pdf and text formats.
 Make sure you have `xhost` and `docker` installed.
 
 ```
-$ docker run  --volume /absolute/path/to/directory:/app/data/secure:ro \
+$ docker run  --volume /absolute/path/to/directory:/app/data:ro \
               --volume /tmp/.X11-unix:/tmp/.X11-unix \
               --network none \
               --ipc host \
