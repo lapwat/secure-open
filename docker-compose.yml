@@ -3,12 +3,12 @@ services:
   secure-open:
     build: .
     image: lapwat/secure-open
-    ipc: host
     volumes:
-    - /tmp/.X11-unix:/tmp/.X11-unix
-    - ${ABSOLUTE_PATH}:/app/data/${NAME}:${READOPTION}
-    devices:
-    - /dev/snd
-    - /dev/dri
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${ABSOLUTE_PATH}:/app/data/${NAME}:${READOPTION}
+    ipc: host
     environment:
-    - DISPLAY=unix${DISPLAY}
+      - DISPLAY=unix${DISPLAY}
+    devices:
+      - /dev/snd
+      - /dev/dri
