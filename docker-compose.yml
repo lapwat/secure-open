@@ -5,7 +5,7 @@ services:
     image: lapwat/secure-open
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ${OPEN_PATH}:/app/data/secure:ro
+      - ${PATH_TO_DIRECTORY}:/app/data/secure:ro
     network_mode: none
     ipc: host
     environment:
