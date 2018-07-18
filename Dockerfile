@@ -19,8 +19,6 @@ WORKDIR $HOME
 COPY .config/pcmanconf/mimeapps.list .config/
 COPY .config/pcmanconf/*.desktop .local/share/applications/
 
-COPY .config/openurl.sh /app/
-
 CMD ["pcmanfm", "/app/data/"]
 
 # libva \
