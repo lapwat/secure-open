@@ -10,8 +10,11 @@ The tool supports image, video, sound, pdf and text formats.
 
 Make sure you have `xhost` and `docker` installed.
 
+This command will open the current directory.
+
 ```
-$ docker run  --volume /absolute/path/to/directory:/app/data:ro \
+$ xhost +local:docker && \
+  docker run  --volume $PWD:/app/data:ro \
               --volume /tmp/.X11-unix:/tmp/.X11-unix \
               --network none \
               --ipc host \
@@ -21,13 +24,9 @@ $ docker run  --volume /absolute/path/to/directory:/app/data:ro \
               lapwat/secure-open
 ```
 
-Alternatively, you can use `docker-compose`:
+To open another directory, replace `$PWD` with the **absolute** path you want to open into `secure-open`.
 
-```
-$ PATH_TO_DIRECTORY=/absolute/path/to/directory docker-compose up -d
-```
-
-Remove `ro` option if you want to be able to modify files from the container.
+Remove `ro` option if you want to modify files mounted into the container.
 
 # What is working ?
 
